@@ -1,0 +1,7 @@
+{% extends "itmo/base-template.html" %}
+{% block content %}
+<h1>Lessons</h1>
+{% for lesson in lessons %}
+    <li><a href="{% url 'itmo:lesson' lesson.id %}">{{lesson}}</a></li>
+{% endfor %}
+{% endblock %}
