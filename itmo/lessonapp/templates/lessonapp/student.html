@@ -1,4 +1,7 @@
 {% extends "lessonapp/base-template.html" %}
 {% block content %}
-
+    <h1>{{student}}</h1>
+    {% for lesson in student.attendance_set.all %}
+        <li><a href="">{{lesson.lesson.description}}</a></li>
+    {% endfor %}
 {% endblock %}

@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, \
+    redirect
 from django.http import HttpResponse, Http404
 from .models import Lesson, Student, Attendance
 from .forms import AttendanceForm
@@ -9,7 +10,8 @@ def index(request):
 
 
 def students(request):
-    return render(request, 'lessonapp/students.html', )
+    _students = Student.objects.all()
+    return render(request, 'lessonapp/students.html',  {'students': _students})
 
 
 def lessons(request):
@@ -18,7 +20,8 @@ def lessons(request):
 
 
 def student(request, student_id):
-    return HttpResponse('Student: %s' % student_id)
+    _student = Student.objects.get(pk=student_id)
+    return render(request, 'lessonapp/student.html', {'student': _student})
 
 
 def lesson(request, lesson_id):
@@ -30,7 +33,13 @@ def attendance(request):
     if request.method == 'POST':
         form = AttendanceForm(request.POST)
         _student = request.POST.get('student')
-
+        _lesson = request.POST.get('lesson')
+        _attendance = Attendance(
+            student=Student.objects.get(pk=_student),
+            lesson=Lesson.objects.get(pk=_lesson)
+        )
+        _attendance.save()
+        return redirect('lessonapp:student', student_id=_student)
     else:
         form = AttendanceForm()
 
