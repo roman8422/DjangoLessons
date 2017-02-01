@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="832c1de2-babc-4f7e-9b8a-6d47c902fe03" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/itmo/lessonapp/templates/lessonapp/index.html" afterPath="$PROJECT_DIR$/itmo/lessonapp/templates/lessonapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/itmo/lessonapp/templates/lessonapp/lessons.html" afterPath="$PROJECT_DIR$/itmo/lessonapp/templates/lessonapp/lessons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/itmo/lessonapp/urls.py" afterPath="$PROJECT_DIR$/itmo/lessonapp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/itmo/lessonapp/views.py" afterPath="$PROJECT_DIR$/itmo/lessonapp/views.py" />
-    </list>
+    <list default="true" id="832c1de2-babc-4f7e-9b8a-6d47c902fe03" name="Default" comment="" />
     <ignored path="DjangoLessons.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -116,7 +110,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
+    <option name="x" value="-1367" />
     <option name="y" value="24" />
     <option name="width" value="1368" />
     <option name="height" value="721" />
@@ -411,7 +405,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1368" height="721" extended-state="6" />
+    <frame x="-1367" y="24" width="1368" height="721" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
