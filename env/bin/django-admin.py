@@ -1,4 +1,4 @@
-#!/home/alfro/Documents/course/lesson3/djangoproject/env/bin/python3
+#!/home/alfro/Documents/course/lesson4/DjangoLessons/env/bin/python3
 from django.core import management
 
 if __name__ == "__main__":
